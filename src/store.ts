@@ -1,0 +1,3 @@
+// interface GameQueryStore{
+//     gameQuery:Game
+// }
