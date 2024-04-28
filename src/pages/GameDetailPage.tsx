@@ -5,6 +5,7 @@ import CriticScore from "../components/CriticScore";
 import Definitionitems from "../components/Definitionitems";
 import ExpandableText from "../components/ExpandableText";
 import GameAtrtibute from "../components/GameAtrtibute";
+import GameTrailer from "../components/GameTrailer";
 import useGame from "../hooks/useGame";
 
 const GameDetailPage = () => {
@@ -19,6 +20,7 @@ const GameDetailPage = () => {
         <Heading>{game.name}</Heading>
         <ExpandableText>{game.description_raw}</ExpandableText>
         <GameAtrtibute game={game} />
+        <GameTrailer gameId={game.id} />
       </Box>
     </>
   );
