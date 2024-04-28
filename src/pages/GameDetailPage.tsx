@@ -1,7 +1,10 @@
-import { Box, Heading, Spinner, Text } from "@chakra-ui/react";
+import { Box, Heading, SimpleGrid, Spinner, Text } from "@chakra-ui/react";
 import React from "react";
 import { useParams } from "react-router-dom";
+import CriticScore from "../components/CriticScore";
+import Definitionitems from "../components/Definitionitems";
 import ExpandableText from "../components/ExpandableText";
+import GameAtrtibute from "../components/GameAtrtibute";
 import useGame from "../hooks/useGame";
 
 const GameDetailPage = () => {
@@ -15,6 +18,7 @@ const GameDetailPage = () => {
       <Box padding={5}>
         <Heading>{game.name}</Heading>
         <ExpandableText>{game.description_raw}</ExpandableText>
+        <GameAtrtibute game={game} />
       </Box>
     </>
   );
